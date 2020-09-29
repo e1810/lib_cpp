@@ -14,7 +14,7 @@ data:
       title: data_structure/unionfind.cpp
   - name: math
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: math/modpow.cpp
       title: math/modpow.cpp
   - name: test/yosupo
@@ -25,10 +25,10 @@ data:
   verificationCategories:
   - name: test/yuki
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki/12.test.cpp
       title: test/yuki/12.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki/16.test.cpp
       title: test/yuki/16.test.cpp
 layout: toppage

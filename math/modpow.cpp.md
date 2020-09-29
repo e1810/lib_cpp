@@ -3,11 +3,11 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki/16.test.cpp
     title: test/yuki/16.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"math/modpow.cpp\"\n\n\n\ntemplate<typename T>\nT modpow(T\
@@ -21,7 +21,7 @@ data:
   path: math/modpow.cpp
   requiredBy: []
   timestamp: '2020-09-29 17:31:46+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki/16.test.cpp
 documentation_of: math/modpow.cpp
