@@ -1,8 +1,9 @@
-#ifndef INCLUDED_SEGTREE_HPP
-#define INCLUDED_SEGTREE_HPP
+#ifndef INCLUDED_SEGTREE
+#define INCLUDED_SEGTREE
 #include<vector>
+#include<functional>
 
-<template typename T>
+template<typename T>
 struct Segtree {
 	using func = std::function<T(T, T)>;
 
@@ -11,14 +12,14 @@ struct Segtree {
 	T unit;
 	std::vector<T> data;
 
-	Segtree(int n=1e5, func f, T u): f(f), unit(u) {
+	Segtree(int n, func f, T u): f(f), unit(u) {
 		sz = 1;
 		while(sz<n) sz<<=1;
-		seg.assign(2*sz, unit);
+		data.assign(2*sz, unit);
 	}
 
 	void set(int idx, T x){
-		seg[sz + idx] = x;
+		data[sz + idx] = x;
 	}
 
 	void build(){
@@ -43,6 +44,10 @@ struct Segtree {
 			if(b&1) r = f(data[--b], r);
 		}
 		return f(l, r);
+	}
+
+	T operator[](size_t i){
+		return data[sz+i];
 	}
 };
 

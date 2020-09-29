@@ -1,14 +1,14 @@
-#ifndef INCLUDED_FENWICK_HPP
-#define INCLUDED_FENWICK_HPP
+#ifndef INCLUDED_FENWICKTREE
+#define INCLUDED_FENWICKTREE
 #include<vector>
 
 // add: idx番目の値にxを加算
-// sum: 区間[0, r]の総和を取得
+// sum: 区間[l, r)の総和を取得
 
 template<typename T>
-struct Fenwick {
+struct FenwickTree {
     std::vector<T> data;
-    Fenwick(int sz=1e5): data(sz+1, 0) {}
+    FenwickTree(int sz=1e5): data(sz+1, 0) {}
 
     void add(int idx, T x){
 		idx++;
@@ -28,7 +28,7 @@ struct Fenwick {
 	}
 
 	T sum(int l, int r){
-		return __sum(r+1) - __sum(l);
+		return __sum(r) - __sum(l);
 	}
 
 };
