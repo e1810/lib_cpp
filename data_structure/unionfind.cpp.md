@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/yosupo/unionfind.cpp
-    title: test/yosupo/unionfind.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo/data_structure/unionfind.test.cpp
+    title: test/yosupo/data_structure/unionfind.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"data_structure/unionfind.cpp\"\n\n\n#include<vector>\n\n\
@@ -25,11 +25,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: data_structure/unionfind.cpp
-  requiredBy:
-  - test/yosupo/unionfind.cpp
+  requiredBy: []
   timestamp: '2020-09-29 17:31:46+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo/data_structure/unionfind.test.cpp
 documentation_of: data_structure/unionfind.cpp
 layout: document
 redirect_from:

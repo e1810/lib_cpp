@@ -3,13 +3,13 @@ data:
   libraryCategories:
   - name: data_structure
     pages:
-    - icon: ':warning:'
-      path: data_structure/fenwick.cpp
-      title: data_structure/fenwick.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
+      path: data_structure/fenwicktree.cpp
+      title: data_structure/fenwicktree.cpp
+    - icon: ':heavy_check_mark:'
       path: data_structure/segtree.cpp
       title: data_structure/segtree.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: data_structure/unionfind.cpp
       title: data_structure/unionfind.cpp
   - name: math
@@ -17,12 +17,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: math/modpow.cpp
       title: math/modpow.cpp
-  - name: test/yosupo
-    pages:
-    - icon: ':warning:'
-      path: test/yosupo/unionfind.cpp
-      title: test/yosupo/unionfind.cpp
   verificationCategories:
+  - name: test/yosupo/data_structure
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/data_structure/point_add_range_sum.fenwick_tree.test.cpp
+      title: test/yosupo/data_structure/point_add_range_sum.fenwick_tree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
+      title: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/data_structure/unionfind.test.cpp
+      title: test/yosupo/data_structure/unionfind.test.cpp
   - name: test/yuki
     pages:
     - icon: ':heavy_check_mark:'
