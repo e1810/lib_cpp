@@ -27,6 +27,9 @@ data:
       path: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
       title: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/yosupo/data_structure/point_set_range_composite.test.cpp
+      title: test/yosupo/data_structure/point_set_range_composite.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/yosupo/data_structure/unionfind.test.cpp
       title: test/yosupo/data_structure/unionfind.test.cpp
   - name: test/yuki
