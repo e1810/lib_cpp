@@ -2,53 +2,43 @@
 #define INCLUDED_SEGTREE
 #include<vector>
 #include<functional>
-
 template<typename T>
 struct Segtree {
-	using func = std::function<T(T, T)>;
+    using F = std::function<T(T,T)>;
+    const T e;
+    F func;
+    size_t sz = 1;
+    std::vector<T> data;
+    Segtree(int n, F func, T e): func(func), e(e){
+        while(sz<n) sz <<= 1;
+        data.assign(sz*2, e);
+    }
 
-	int sz;
-	func f;
-	T unit;
-	std::vector<T> data;
-
-	Segtree(int n, func f, T u): f(f), unit(u) {
-		sz = 1;
-		while(sz<n) sz<<=1;
-		data.assign(2*sz, unit);
-	}
-
-	void set(int idx, T x){
-		data[sz + idx] = x;
-	}
-
+	void set(size_t idx, T val){data[sz+idx] = val;}
 	void build(){
-		for(int k=sz-1; k>0; k--){
-			data[k] = f(data[2*k], data[2*k+1]);
+		for(int i=sz-1; i>0; i--){
+			data[i] = func(data[2*i], data[2*i+1]);
 		}
 	}
 
+    void update(size_t idx, T val){
+        idx += sz;
+        data[idx] = val;
+        while(idx>>=1){
+            data[idx] = func(data[idx*2], data[idx*2+1]);
+        }
+    }
 
-	void update(int idx, T x){
-		idx += sz;
-		data[idx] = x;
-		while(idx>>=1){
-			data[idx] = f(data[2*idx], data[2*idx+1]);
-		}
-	}
+    T query(size_t l, size_t r){
+        T resL = e, resR = e;
+        for(l+=sz, r+=sz; l<r; l>>=1, r>>=1){
+            if(l&1) resL = func(resL, data[l++]);
+            if(r&1) resR = func(data[--r], resR);
+        }
+        return func(resL, resR);
+    }
 
-	T query(int a,  int b){
-		T l = unit, r = unit;
-		for(a+=sz, b+=sz; a<b; a>>=1, b>>=1){
-			if(a&1) l = f(l, data[a++]);
-			if(b&1) r = f(data[--b], r);
-		}
-		return f(l, r);
-	}
-
-	T operator[](size_t i){
-		return data[sz+i];
-	}
+	T operator[](size_t idx){return data[sz+idx];}
 };
 
 #endif
