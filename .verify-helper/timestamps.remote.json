@@ -1,6 +1,7 @@
 {
 "test/yosupo/data_structure/point_add_range_sum.fenwick_tree.test.cpp": "2020-09-29 20:15:27 +0900",
-"test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp": "2020-09-29 20:15:27 +0900",
+"test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp": "2020-10-03 01:13:54 +0900",
+"test/yosupo/data_structure/point_set_range_composite.test.cpp": "2020-10-03 01:13:54 +0900",
 "test/yosupo/data_structure/unionfind.test.cpp": "2020-09-29 20:15:27 +0900",
 "test/yuki/12.test.cpp": "2020-09-29 17:31:46 +0900",
 "test/yuki/16.test.cpp": "2020-09-29 17:31:46 +0900"
