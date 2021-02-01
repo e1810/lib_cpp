@@ -6,6 +6,7 @@ data:
     title: data_structure/segtree.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -16,19 +17,17 @@ data:
   bundledCode: "#line 1 \"test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n#include<cstdio>\n\
     #include<cstdint>\n#line 1 \"data_structure/segtree.cpp\"\n\n\n#include<vector>\n\
-    #include<functional>\ntemplate<typename T>\nstruct Segtree {\n    using F = std::function<T(T,T)>;\n\
-    \    const T e;\n    F func;\n    size_t sz = 1;\n    std::vector<T> data;\n \
-    \   Segtree(int n, F func, T e): func(func), e(e){\n        while(sz<n) sz <<=\
-    \ 1;\n        data.assign(sz*2, e);\n    }\n\n\tvoid set(size_t idx, T val){data[sz+idx]\
-    \ = val;}\n\tvoid build(){\n\t\tfor(int i=sz-1; i>0; i--){\n\t\t\tdata[i] = func(data[2*i],\
-    \ data[2*i+1]);\n\t\t}\n\t}\n\n    void update(size_t idx, T val){\n        idx\
-    \ += sz;\n        data[idx] = val;\n        while(idx>>=1){\n            data[idx]\
-    \ = func(data[idx*2], data[idx*2+1]);\n        }\n    }\n\n    T query(size_t\
-    \ l, size_t r){\n        T resL = e, resR = e;\n        for(l+=sz, r+=sz; l<r;\
-    \ l>>=1, r>>=1){\n            if(l&1) resL = func(resL, data[l++]);\n        \
-    \    if(r&1) resR = func(data[--r], resR);\n        }\n        return func(resL,\
-    \ resR);\n    }\n\n\tT operator[](size_t idx){return data[sz+idx];}\n};\n\n\n\
-    #line 5 \"test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp\"\
+    #include<functional>\ntemplate<typename T>\nstruct Segtree {\n\tusing F = std::function<T(T,T)>;\n\
+    \tconst T e;\n\tF func;\n\tsize_t sz = 1;\n\tstd::vector<T> data;\n\tSegtree(int\
+    \ n, F func, T e): func(func), e(e){\n\t\twhile(sz<n) sz <<= 1;\n\t\tdata.assign(sz*2,\
+    \ e);\n\t}\n\n\tvoid set(size_t idx, T val){data[sz+idx] = val;}\n\tvoid build(){\n\
+    \t\tfor(int i=sz-1; i>0; i--){\n\t\t\tdata[i] = func(data[2*i], data[2*i+1]);\n\
+    \t\t}\n\t}\n\n\tvoid update(size_t idx, T val){\n\t\tidx += sz;\n\t\tdata[idx]\
+    \ = val;\n\t\twhile(idx>>=1){\n\t\t\tdata[idx] = func(data[idx*2], data[idx*2+1]);\n\
+    \t\t}\n\t}\n\n\tT query(size_t l, size_t r){\n\t\tT resL = e, resR = e;\n\t\t\
+    for(l+=sz, r+=sz; l<r; l>>=1, r>>=1){\n\t\t\tif(l&1) resL = func(resL, data[l++]);\n\
+    \t\t\tif(r&1) resR = func(data[--r], resR);\n\t\t}\n\t\treturn func(resL, resR);\n\
+    \t}\n\n\tT operator[](size_t idx){return data[sz+idx];}\n};\n\n\n#line 5 \"test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp\"\
     \nusing ll = int_fast64_t;\n\nint main(){\n\tint n, q;\n\tscanf(\"%d %d\", &n,\
     \ &q);\n\tSegtree<ll> seg(n, [](ll a, ll b){return a+b;}, 0);\n\tfor(int i=0;\
     \ i<n; i++){\n\t\tint a;\n\t\tscanf(\"%d\", &a);\n\t\tseg.set(i, a);\n\t}\n\t\
@@ -48,7 +47,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
   requiredBy: []
-  timestamp: '2020-10-03 01:13:54+09:00'
+  timestamp: '2021-02-02 00:04:27+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
