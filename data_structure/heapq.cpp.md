@@ -12,36 +12,30 @@ data:
   attributes:
     links: []
   bundledCode: "#line 1 \"data_structure/heapq.cpp\"\n\n\n\n#include<vector>\n#include<algorithm>\n\
-    #include<cassert>\n\ntemplate<typename T>\nstruct HeapQ {\n    std::vector<T>\
-    \ tree;\n    HeapQ(): tree(1) {}\n\n    T top(){\n        assert(tree.size()>1);\n\
-    \        return tree[1];\n    }\n\n    void push(T x){\n        tree.push_back(x);\n\
-    \        size_t pos = tree.size() - 1;\n        while(pos/2 > 0){\n          \
-    \  if(tree[pos/2] < tree[pos]){\n                std::swap(tree[pos/2], tree[pos]);\n\
-    \            }else break;\n            pos /= 2;\n        }\n    }\n\n    void\
-    \ pop(){\n        tree[1] = tree.back();\n        tree.pop_back();\n        size_t\
-    \ pos = 1;\n        while(pos*2<tree.size()){\n            size_t nx = pos * 2;\n\
-    \            if(nx+1 < tree.size()){\n\t\t\t\tif(tree[nx] < tree[nx+1]) nx++;\n\
-    \            }\n            if(tree[pos] < tree[nx]){\n                std::swap(tree[pos],\
-    \ tree[nx]);\n            }else break;\n            pos = nx;\n        }\n   \
-    \ }\n};\n\n\n\n"
+    #include<cassert>\n\ntemplate<typename T>\nstruct HeapQ {\n\tstd::vector<T> tree;\n\
+    \tHeapQ(): tree(1) {}\n\n\tT top(){\n\t\tassert(tree.size()>1);\n\t\treturn tree[1];\n\
+    \t}\n\n\tvoid push(T x){\n\t\ttree.push_back(x);\n\t\tsize_t pos = tree.size()\
+    \ - 1;\n\t\twhile(pos/2 > 0){\n\t\t\tif(tree[pos/2] < tree[pos]){\n\t\t\t\tstd::swap(tree[pos/2],\
+    \ tree[pos]);\n\t\t\t}else break;\n\t\t\tpos /= 2;\n\t\t}\n\t}\n\n\tvoid pop(){\n\
+    \t\ttree[1] = tree.back();\n\t\ttree.pop_back();\n\t\tsize_t pos = 1;\n\t\twhile(pos*2<tree.size()){\n\
+    \t\t\tsize_t nx = pos * 2;\n\t\t\tif(nx+1 < tree.size()){\n\t\t\t\tif(tree[nx]\
+    \ < tree[nx+1]) nx++;\n\t\t\t}\n\t\t\tif(tree[pos] < tree[nx]){\n\t\t\t\tstd::swap(tree[pos],\
+    \ tree[nx]);\n\t\t\t}else break;\n\t\t\tpos = nx;\n\t\t}\n\t}\n};\n\n\n\n"
   code: "#ifndef INCLUDED_HEAPQ\n#define INCLUDED_HEAPQ\n\n#include<vector>\n#include<algorithm>\n\
-    #include<cassert>\n\ntemplate<typename T>\nstruct HeapQ {\n    std::vector<T>\
-    \ tree;\n    HeapQ(): tree(1) {}\n\n    T top(){\n        assert(tree.size()>1);\n\
-    \        return tree[1];\n    }\n\n    void push(T x){\n        tree.push_back(x);\n\
-    \        size_t pos = tree.size() - 1;\n        while(pos/2 > 0){\n          \
-    \  if(tree[pos/2] < tree[pos]){\n                std::swap(tree[pos/2], tree[pos]);\n\
-    \            }else break;\n            pos /= 2;\n        }\n    }\n\n    void\
-    \ pop(){\n        tree[1] = tree.back();\n        tree.pop_back();\n        size_t\
-    \ pos = 1;\n        while(pos*2<tree.size()){\n            size_t nx = pos * 2;\n\
-    \            if(nx+1 < tree.size()){\n\t\t\t\tif(tree[nx] < tree[nx+1]) nx++;\n\
-    \            }\n            if(tree[pos] < tree[nx]){\n                std::swap(tree[pos],\
-    \ tree[nx]);\n            }else break;\n            pos = nx;\n        }\n   \
-    \ }\n};\n\n\n#endif\n"
+    #include<cassert>\n\ntemplate<typename T>\nstruct HeapQ {\n\tstd::vector<T> tree;\n\
+    \tHeapQ(): tree(1) {}\n\n\tT top(){\n\t\tassert(tree.size()>1);\n\t\treturn tree[1];\n\
+    \t}\n\n\tvoid push(T x){\n\t\ttree.push_back(x);\n\t\tsize_t pos = tree.size()\
+    \ - 1;\n\t\twhile(pos/2 > 0){\n\t\t\tif(tree[pos/2] < tree[pos]){\n\t\t\t\tstd::swap(tree[pos/2],\
+    \ tree[pos]);\n\t\t\t}else break;\n\t\t\tpos /= 2;\n\t\t}\n\t}\n\n\tvoid pop(){\n\
+    \t\ttree[1] = tree.back();\n\t\ttree.pop_back();\n\t\tsize_t pos = 1;\n\t\twhile(pos*2<tree.size()){\n\
+    \t\t\tsize_t nx = pos * 2;\n\t\t\tif(nx+1 < tree.size()){\n\t\t\t\tif(tree[nx]\
+    \ < tree[nx+1]) nx++;\n\t\t\t}\n\t\t\tif(tree[pos] < tree[nx]){\n\t\t\t\tstd::swap(tree[pos],\
+    \ tree[nx]);\n\t\t\t}else break;\n\t\t\tpos = nx;\n\t\t}\n\t}\n};\n\n\n#endif\n"
   dependsOn: []
   isVerificationFile: false
   path: data_structure/heapq.cpp
   requiredBy: []
-  timestamp: '2021-02-02 00:04:27+09:00'
+  timestamp: '2021-03-01 16:28:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj/ALDS1/9_C.test.cpp
