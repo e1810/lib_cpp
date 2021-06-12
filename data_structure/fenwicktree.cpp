@@ -7,16 +7,16 @@
 
 template<typename T>
 struct FenwickTree {
-    std::vector<T> data;
-    FenwickTree(int sz=1e5): data(sz+1, 0) {}
+	std::vector<T> data;
+	FenwickTree(int sz=1e5): data(sz+1, 0) {}
 
-    void add(int idx, T x){
+	void add(int idx, T x){
 		idx++;
 		while(idx<data.size()){
-	    	data[idx] += x;
-	    	idx += idx & -idx;
+			data[idx] += x;
+			idx += idx & -idx;
 		}
-    }
+	}
 
 	T __sum(int r){
 		T ret = 0;

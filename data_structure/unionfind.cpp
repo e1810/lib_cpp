@@ -3,8 +3,8 @@
 #include<vector>
 
 struct UnionFind {
-    std::vector<int> data;
-    UnionFind(int n=1e5): data(n, -1) {}
+	std::vector<int> data;
+	UnionFind(int n=1e5): data(n, -1) {}
 
 	int root(int x){
 		if(data[x]<0) return x;
