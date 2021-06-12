@@ -1,5 +1,5 @@
-#ifndef INCLUDED_BINOM_MOD3
-#define INCLUDED_BINOM_MOD3
+#ifndef BINOM_MOD3_INCLUDED
+#define BINOM_MOD3_INCLUDED
 
 #include<vector>
 #include<cassert>

@@ -1,5 +1,5 @@
-#ifndef INCLUDED_BINOM_LUCAS
-#define INCLUDED_BINOM_LUCAS
+#ifndef BINOM_LUCAS_INCLUDED
+#define BINOM_LUCAS_INCLUDED
 
 #include<combination.cpp>
 template<typename Int>
