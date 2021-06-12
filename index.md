@@ -17,6 +17,12 @@ data:
       title: data_structure/unionfind.cpp
   - name: math
     pages:
+    - icon: ':warning:'
+      path: math/binom_lucas.cpp
+      title: math/binom_lucas.cpp
+    - icon: ':warning:'
+      path: math/binom_mod3.cpp
+      title: math/binom_mod3.cpp
     - icon: ':heavy_check_mark:'
       path: math/modpow.cpp
       title: math/modpow.cpp

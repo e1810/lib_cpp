@@ -45,8 +45,8 @@ data:
   timestamp: '2021-02-02 00:04:27+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo/data_structure/point_set_range_composite.test.cpp
   - test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp
+  - test/yosupo/data_structure/point_set_range_composite.test.cpp
 documentation_of: data_structure/segtree.cpp
 layout: document
 redirect_from:
