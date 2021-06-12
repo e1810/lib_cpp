@@ -25,7 +25,7 @@ data:
       title: math/binom_mod3.cpp
     - icon: ':heavy_check_mark:'
       path: math/modpow.cpp
-      title: math/modpow.cpp
+      title: modpow
   - name: string
     pages:
     - icon: ':heavy_check_mark:'
