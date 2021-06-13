@@ -3,12 +3,13 @@
 #include<cstdio>
 #include<cstdint>
 #include"../../math/combination.cpp"
+const int MOD = 1e9 + 7;
 
 int main(){
 	int t;
 	scanf("%d", &t);
 
-	Combination<int64_t> com(2e6);
+	Combination com(2e6, MOD);
 
 	while(t--){
 		getchar();
