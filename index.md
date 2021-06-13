@@ -19,10 +19,13 @@ data:
     pages:
     - icon: ':warning:'
       path: math/binom_lucas.cpp
-      title: math/binom_lucas.cpp
+      title: binom_lucas
     - icon: ':warning:'
       path: math/binom_mod3.cpp
       title: math/binom_mod3.cpp
+    - icon: ':heavy_check_mark:'
+      path: math/combination.cpp
+      title: math/combination.cpp
     - icon: ':heavy_check_mark:'
       path: math/modpow.cpp
       title: modpow
@@ -58,6 +61,9 @@ data:
       title: test/yosupo/data_structure/unionfind.test.cpp
   - name: test/yuki
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/yuki/117.test.cpp
+      title: test/yuki/117.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki/12.test.cpp
       title: test/yuki/12.test.cpp
