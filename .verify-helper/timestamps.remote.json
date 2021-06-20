@@ -1,10 +1,12 @@
 {
 "test/aoj/ALDS1/9_C.test.cpp": "2021-03-01 16:28:30 +0900",
 "test/aoj/DPL1/1_E.test.cpp": "2021-03-01 16:28:30 +0900",
+"test/aoj/GRL/3_C.test.cpp": "2021-06-20 15:00:49 +0900",
 "test/yosupo/data_structure/point_add_range_sum.fenwick_tree.test.cpp": "2021-06-13 03:44:23 +0900",
 "test/yosupo/data_structure/point_add_range_sum.segment_tree.test.cpp": "2021-02-02 00:04:27 +0900",
 "test/yosupo/data_structure/point_set_range_composite.test.cpp": "2021-02-02 00:04:27 +0900",
 "test/yosupo/data_structure/unionfind.test.cpp": "2021-06-13 03:44:23 +0900",
+"test/yosupo/graph/scc.test.cpp": "2021-06-20 15:00:49 +0900",
 "test/yuki/117.test.cpp": "2021-06-13 18:36:45 +0900",
 "test/yuki/12.test.cpp": "2020-09-29 17:31:46 +0900",
 "test/yuki/16.test.cpp": "2021-06-13 03:44:23 +0900"
