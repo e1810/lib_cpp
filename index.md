@@ -15,6 +15,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/unionfind.cpp
       title: data_structure/unionfind.cpp
+  - name: graph
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: graph/scc_decompose.cpp
+      title: scc_decompose
   - name: math
     pages:
     - icon: ':warning:'
@@ -45,6 +50,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj/DPL1/1_E.test.cpp
       title: test/aoj/DPL1/1_E.test.cpp
+  - name: test/aoj/GRL
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/GRL/3_C.test.cpp
+      title: test/aoj/GRL/3_C.test.cpp
   - name: test/yosupo/data_structure
     pages:
     - icon: ':heavy_check_mark:'
@@ -59,6 +69,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo/data_structure/unionfind.test.cpp
       title: test/yosupo/data_structure/unionfind.test.cpp
+  - name: test/yosupo/graph
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/graph/scc.test.cpp
+      title: test/yosupo/graph/scc.test.cpp
   - name: test/yuki
     pages:
     - icon: ':heavy_check_mark:'
