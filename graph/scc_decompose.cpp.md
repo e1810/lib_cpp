@@ -67,8 +67,8 @@ data:
   timestamp: '2021-06-20 15:00:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo/graph/scc.test.cpp
   - test/aoj/GRL/3_C.test.cpp
+  - test/yosupo/graph/scc.test.cpp
 documentation_of: graph/scc_decompose.cpp
 layout: document
 title: scc_decompose
