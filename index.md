@@ -15,6 +15,11 @@ data:
     - icon: ':x:'
       path: data_structure/unionfind.cpp
       title: data_structure/unionfind.cpp
+  - name: geometry
+    pages:
+    - icon: ':warning:'
+      path: geometry/template.cpp
+      title: geometry/template.cpp
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
