@@ -11,10 +11,6 @@ struct UnionFind {
 		else return data[x] = root(data[x]);
 	}
 
-	bool same(int x, int y){
-		return root(x)==root(y);
-	}
-
 	void unite(int x, int y){
 		x = root(x);
 		y = root(y);
