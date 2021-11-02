@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: data_structure/unionfind.cpp
     title: data_structure/unionfind.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
@@ -24,19 +24,20 @@ data:
     \t}\n};\n\n\n#line 4 \"test/yosupo/data_structure/unionfind.test.cpp\"\n\nint\
     \ main(){\n\tint n, q;\n\tscanf(\"%d %d\", &n, &q);\n\tUnionFind uf(n);\n\twhile(q--){\n\
     \t\tint t, u, v;\n\t\tscanf(\"%d %d %d\", &t, &u, &v);\n\t\tif(t==0) uf.unite(u,\
-    \ v);\n\t\telse printf(\"%d\\n\", uf.same(u, v));\n\t}\n\treturn 0;\n}\n"
+    \ v);\n\t\telse printf(\"%d\\n\", uf.root(u)==uf.root(v));\n\t}\n\treturn 0;\n\
+    }\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n#include<bits/stdc++.h>\n\
     #include\"../../../data_structure/unionfind.cpp\"\n\nint main(){\n\tint n, q;\n\
     \tscanf(\"%d %d\", &n, &q);\n\tUnionFind uf(n);\n\twhile(q--){\n\t\tint t, u,\
     \ v;\n\t\tscanf(\"%d %d %d\", &t, &u, &v);\n\t\tif(t==0) uf.unite(u, v);\n\t\t\
-    else printf(\"%d\\n\", uf.same(u, v));\n\t}\n\treturn 0;\n}\n"
+    else printf(\"%d\\n\", uf.root(u)==uf.root(v));\n\t}\n\treturn 0;\n}\n"
   dependsOn:
   - data_structure/unionfind.cpp
   isVerificationFile: true
   path: test/yosupo/data_structure/unionfind.test.cpp
   requiredBy: []
-  timestamp: '2021-10-31 15:09:52+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-11-02 19:52:58+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/data_structure/unionfind.test.cpp
 layout: document

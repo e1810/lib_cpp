@@ -12,7 +12,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/segtree.cpp
       title: data_structure/segtree.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: data_structure/unionfind.cpp
       title: data_structure/unionfind.cpp
   - name: geometry
@@ -71,7 +71,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo/data_structure/point_set_range_composite.test.cpp
       title: test/yosupo/data_structure/point_set_range_composite.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo/data_structure/unionfind.test.cpp
       title: test/yosupo/data_structure/unionfind.test.cpp
   - name: test/yosupo/graph
