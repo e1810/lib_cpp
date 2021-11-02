@@ -10,7 +10,7 @@ int main(){
 		int t, u, v;
 		scanf("%d %d %d", &t, &u, &v);
 		if(t==0) uf.unite(u, v);
-		else printf("%d\n", uf.same(u, v));
+		else printf("%d\n", uf.root(u)==uf.root(v));
 	}
 	return 0;
 }
